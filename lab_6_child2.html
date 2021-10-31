@@ -1,0 +1,48 @@
+{% extends "lab_6.html" %} <!--Inherit tmeplate from parent-->
+
+{% block tab_title %}
+Alan Turing
+{% endblock %}
+
+
+{% block logout %} <!--This block is a logout button-->
+<form action="{{url_for('logout')}}" method="POST">
+  <input class="btn btn-default" type="submit" value="logout">
+</form>
+{% endblock %}
+
+
+{% block home_button %}
+<a href="{{url_for('home')}}">Home</a> <!--Home button links to home page-->
+{% endblock %}
+
+{% block title %} <!--Template block-->
+Alan Turing <!--Text gets rendered in the h1  block from parent, lab_6.html-->
+{% endblock %} <!--End template block-->
+
+{% block title_content %} <!--Template block-->
+<p>Alan Mathison Turing OBE FRS (/ˈtjʊərɪŋ/; 23 June 1912 – 7 June 1954)
+  was an English mathematician, computer scientist, logician, cryptanalyst,
+  philosopher, and theoretical biologist.[6][7] Turing was highly influential
+  in the development of theoretical computer science, providing a formalisation
+  of the concepts of algorithm and computation with the Turing machine, which
+  can be considered a model of a general-purpose computer.[8][9][10] Turing
+  is widely considered to be the father of theoretical computer science
+  and artificial intelligence.</p> <!--Paragraph about Alan-->
+{% endblock %} <!--End template block-->
+
+{% block subheading %} <!--Template block-->
+<a class='link' href='https://en.wikipedia.org/wiki/Alan_Turing' target='_blank'>Full bio</a> <!--Link to wikipedia will open in new window-->
+{% endblock %} <!--End template block-->
+
+{% block subheading_content %} <!--Template block-->
+
+{% endblock %} <!--End template block-->
+
+{% block subheading2 %} <!--Template block-->
+<img src="./static/Alan_Turing_Aged_16.jpeg" alt="Image of Alan Turing"> <!--Image-->
+{% endblock %} <!--End template block-->
+
+{% block subheading2_content %} <!--Template block-->
+
+{% endblock %} <!--End template block-->

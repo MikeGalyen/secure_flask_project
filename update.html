@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    {% with messages = get_flashed_messages() %}
+       {% if messages %}
+          {% for message in messages %}
+             <div class="message">{{ message }}</div>
+          {% endfor %}
+       {% endif %}
+    {% endwith %}
+    <form  action="{{url_for('update')}}" method="post">
+      <input type="text" placeholder="Username" name="username" value="{{
+        request.form.username }}">
+       <input type="password" placeholder="Password" name="password" value="{{
+        request.form.password }}">
+        <input type="password" placeholder="New password" name="password1" value="{{
+          request.form.password1 }}">
+        <input type="password" placeholder="Re-enter new password" name="password2" value="{{
+          request.form.password2 }}">
+        {% if password1 == password2 %}
+          <input class="btn btn-default" type="submit" value="Update">
+        {% endif %}
+    </form>
+  </body>
+</html>

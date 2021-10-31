@@ -1,0 +1,48 @@
+{% extends "lab_6.html" %} <!--Inherit tmeplate from parent-->
+
+{% block tab_title %}
+
+{% endblock %}
+
+
+{% block logout %} <!--This block is a logout button-->
+<form action="{{url_for('logout')}}" method="POST">
+  <input class="btn btn-default" type="submit" value="logout">
+</form>
+{% endblock %}
+
+
+{% block home_button %}
+<a href="{{url_for('home')}}">Home</a> <!--Home button links to home page-->
+{% endblock %}
+
+{% block title %} <!--Template block-->
+Herman Hollerith
+{% endblock %} <!--End template block-->
+
+{% block title_content %} <!--Template block-->
+<p>Herman Hollerith (February 29, 1860 – November 17, 1929) was an
+  American businessman, inventor, and statistician who developed an
+  electromechanical tabulating machine for punched cards to assist
+  in summarizing information and, later, in accounting. His invention
+  of the punched card tabulating machine, patented in 1884, marks
+  the beginning of the era of mechanized binary code and semiautomatic
+  data processing systems, and his concept dominated that landscape
+  for nearly a century</p> <!--Paragraph about Herman-->
+{% endblock %} <!--End template block-->
+
+{% block subheading %} <!--Template block-->
+<a class='link' href='https://en.wikipedia.org/wiki/Herman_Hollerith' target='_blank'>Full bio</a> <!--Link to wikipedia will open in new window-->
+{% endblock %} <!--End template block-->
+
+{% block subheading_content %} <!--Template block-->
+
+{% endblock %} <!--End template block-->
+
+{% block subheading2 %} <!--Template block-->
+<img src="./static/Hollerith.jpeg" alt="Image of Herman Hollerith"> <!--Image-->
+{% endblock %} <!--End template block-->
+
+{% block subheading2_content %} <!--Template block-->
+
+{% endblock %} <!--End template block-->

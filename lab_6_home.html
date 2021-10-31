@@ -1,0 +1,78 @@
+{% extends "lab_6.html" %} <!--Inherit tmeplate from parent-->
+
+
+{% block tab_title %}
+Home
+{% endblock %}
+
+
+{% block logout %} <!--This block is a logout button-->
+<form action="{{url_for('logout')}}" method="POST">
+  <input class="btn btn-default" type="submit" value="logout">
+</form>
+{% endblock %}
+
+
+{% block home_button %}
+<a href="{{url_for('home')}}">Home</a> <!--Home button links to home page-->
+{% endblock %}
+
+
+  {% block title %} <!--Template block-->
+  Advances In Computer Science <!--Text gets rendered in the h1  block from parent, lab_6.html-->
+  {% endblock %} <!--End template block-->
+
+
+{% block title_content %} <!--Begin template block-->
+<p>Many advances have been made in computer science and this site will outline three of them.</p> <!--Paragraph-->
+{% endblock %} <!--End template block-->
+
+{% block subheading %} <!--Begin template block-->
+<div class='list'>
+<ol> <!--Ordered list-->
+  <li>Ada lovelace</li> <!--List element-->
+  <li>Alan Turing</li> <!--List element-->
+  <li>Herman Hollerith</li> <!--List element-->
+</ol>
+</div>
+{% endblock %} <!--End template block-->
+
+{% block subheading_content %} <!--Begin template block-->
+<div>
+  <table> <!--Begining of table-->
+    <tr> <!--Table head row-->
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Accomplishment</th>
+    </tr> <!--Table row-->
+    <tr>
+      <td>Ada</td>
+      <td>Lovelace</td>
+      <td>Regarded as first computer programmer</td>
+    </tr>
+    <tr> <!--Table row-->
+      <td>Alan</td>
+      <td>Turing</td>
+      <td>Considered the father of computer science</td>
+    </tr>
+    <tr> <!--Table row-->
+      <td>Herman</td>
+      <td>Hollerith</td>
+      <td>Invented punch card tabulation machine</td>
+    </tr>
+    <tr> <!--Table row-->
+      <td>bonus row</td>
+      <td>bonus row</td>
+      <td>bonus row</td>
+    </tr>
+  </table>
+</div>
+{% endblock %} <!--End template block-->
+
+{% block subheading2 %} <!--Begin template block-->
+<img src="./static/581px-ENIAC-changing_a_tube.jpeg" alt="picture of a computer"> <!--Image-->
+{% endblock %} <!--End template block-->
+
+{% block subheading2_content %} <!--Begin template block-->
+<a href="{{url_for('update')}}">Update Password</a>
+{% endblock %} <!--End template block-->

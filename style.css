@@ -1,0 +1,78 @@
+@charset "UTF-8"; /*Set charset*/
+
+h1 { /*Rules for all h1 tags*/
+  text-align: center;
+  color: red;
+}
+
+h2 { /*Rules for all h2 tags*/
+  text-align: center;
+}
+
+h3 { /*Rules for all h3 tags*/
+  text-align: center;
+}
+p { /*Rules for all p tags*/
+  text-align: center;
+}
+
+img { /*Rules for all image elements*/
+  max-width: 100%;
+  Height: auto;
+}
+
+table { /*Rules for all table elements*/
+  border-collapse:collapse;
+  border-width: 2px;
+  margin-left: 610px;
+}
+
+table td { /*Rules for all table data cells*/
+  border-style: solid;
+  border-width: 2px;
+}
+
+table th { /*Rules for all table header cells*/
+  border-style: solid;
+  border-width: 2px;
+}
+
+.link { /*Rules for link class*/
+  text-align: center;
+}
+
+.list { /*Rules or list class*/
+  text-align: center;
+  list-style-position: inside;
+}
+
+.navigation { /*Rules for navigation class*/
+  display: inline-block;
+  float: right;
+  margin-left: auto;
+}
+
+.home-button { /*Rules for home button class*/
+  text-align: center;
+}
+
+.subheading2 { /*This div holds the image on each page*/
+  margin-left: 45%;
+  height: 200px;
+  width: 200px;
+}
+
+#page_1 { /*Rules for page_1 id*/
+  color: red;
+  dislplay: block;
+}
+
+#page_2 { /*Rules for page_2 id*/
+  color: blue;
+  dislplay: block;
+}
+
+#page_3 {  /*Rules for page_3 id*/
+  color: green;
+  dislplay: block;
+}
